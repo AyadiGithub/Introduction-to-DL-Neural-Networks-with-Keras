@@ -212,4 +212,4 @@ print('The predicted value by the network for the given input is {}'.format(np.a
 my_deep_network = initialize_network(5,10,[12,12,12,12,12,10,10,10,8,8],3)
 inputs = np.around(np.random.uniform(size=5), decimals=2)
 predictions = forward_propagate(my_deep_network, inputs)
-print('The predicted values by the network for the given input are {}'.format(predictions))
+print('The predicted values by the network for the given input are {}'.format(np.around(predictions[0], decimals=4)))
